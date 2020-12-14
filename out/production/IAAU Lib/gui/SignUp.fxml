@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="503.0" prefWidth="854.0" style="-fx-background-color: #fff; -fx-background-image: C:\Users\Murok\Desktop\Library-Information-System-LIS--6e804bba347ef839eb4a81f694ba417ff2d0daa3\src\images\images.jpg;" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.SignUpController">
+    <children>
+        <AnchorPane prefHeight="503.0" prefWidth="382.0" style="-fx-background-color: #EBF5FB;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="152.0" layoutY="172.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/library_management_system.png" />
+                    </image>
+                </ImageView>
+                <Label alignment="CENTER" layoutX="83.0" layoutY="260.0" prefHeight="23.0" prefWidth="216.0" text="IAAU Electronc Library" textFill="#0e005c">
+                    <font>
+                        <Font name="Segoe UI" size="18.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" layoutX="89.0" layoutY="295.0" prefHeight="23.0" prefWidth="205.0" text="&quot;There is no friend as loyal as a book&quot;" textFill="#160583">
+                    <font>
+                        <Font name="Segoe UI" size="12.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <Pane layoutX="488.0" layoutY="18.0" prefHeight="473.0" prefWidth="283.0" AnchorPane.bottomAnchor="12.0" AnchorPane.topAnchor="18.0">
+            <children>
+                <TextField fx:id="txtLastName" layoutX="8.0" layoutY="61.0" prefHeight="34.0" prefWidth="275.0" promptText="Last Name" />
+                <PasswordField fx:id="txtPassword" layoutX="8.0" layoutY="295.0" prefHeight="34.0" prefWidth="275.0" promptText="Password" stylesheets="@../styling/fullpackstyling.css" />
+                <Button fx:id="btnSignUp" layoutX="8.0" layoutY="339.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="275.0" stylesheets="@../styling/fullpackstyling.css" text="Sign up" />
+                <Label fx:id="lblErrors" alignment="CENTER" layoutX="8.0" layoutY="95.0" prefHeight="23.0" prefWidth="275.0" textFill="#ff6354">
+                    <font>
+                        <Font name="Segoe UI" size="10.0" />
+                    </font>
+                </Label>
+            <TextField fx:id="txtFirstName" layoutX="8.0" layoutY="14.0" prefHeight="34.0" prefWidth="275.0" promptText="First Name" />
+            <TextField fx:id="txtUsername" layoutX="8.0" layoutY="251.0" prefHeight="34.0" prefWidth="275.0" promptText="Username" />
+            <TextField fx:id="txtPhoneNumber" layoutX="8.0" layoutY="107.0" prefHeight="34.0" prefWidth="275.0" promptText="Phone Number (+996)" />
+            <TextField fx:id="txtAddress" layoutX="8.0" layoutY="151.0" prefHeight="34.0" prefWidth="275.0" promptText="Address" />
+            <RadioButton fx:id="radioBtnMale" layoutX="14.0" layoutY="213.0" mnemonicParsing="false" text="Male" />
+            <RadioButton fx:id="radioBtnFemale" layoutX="210.0" layoutY="213.0" mnemonicParsing="false" text="Female" />
+            </children>
+        </Pane>
+        <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="394.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/iaau.png" />
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>
