@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.Font?>
 <AnchorPane xmlns:fx="http://javafx.com/fxml/1" id="AnchorPane" prefHeight="503.0" prefWidth="854.0"
-            style="-fx-background-color: #fff; -fx-background-image: C:\Users\Murok\Desktop\Library-Information-System-LIS--6e804bba347ef839eb4a81f694ba417ff2d0daa3\src\images\images.jpg;"
+            style="-fx-background-color: #fff; -fx-background-image: C:\Users\Murok\Desktop\Library-Information\src\images\images.jpg;"
             xmlns="http://javafx.com/javafx/8.0.172-ea" fx:controller="gui.SignUpController">
     <children>
         <AnchorPane prefHeight="503.0" prefWidth="382.0" style="-fx-background-color: #EBF5FB;"
@@ -15,7 +15,7 @@
                 <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="152.0" layoutY="172.0" pickOnBounds="true"
                            preserveRatio="true">
                     <image>
-                        <Image url="@../images/library_management_system.png"/>
+                        <Image url="@../images/library_management.png"/>
                     </image>
                 </ImageView>
                 <Label alignment="CENTER" layoutX="83.0" layoutY="260.0" prefHeight="23.0" prefWidth="216.0"
