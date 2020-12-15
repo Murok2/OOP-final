@@ -4,7 +4,7 @@ import classes.User;
 
 import java.sql.*;
 
-public class DatabaseHandler extends Configurations {
+public class DatabaseHandler extends Configurations{
     Connection dbConnection;
 
     public Connection getDbConnection()
@@ -35,7 +35,7 @@ public class DatabaseHandler extends Configurations {
             prSt.setString(4, user.getPassword());
             prSt.setString(5, user.getGender());
             prSt.setString(6, user.getPhoneNumber());
-            prSt.setString(7, user.getAddress());
+            prSt.setString(7,user.getAddress());
 
             prSt.executeUpdate();
         } catch (SQLException e) {
@@ -44,7 +44,6 @@ public class DatabaseHandler extends Configurations {
             e.printStackTrace();
         }
     }
-
     public ResultSet getUser(User user) {
         ResultSet resultSet = null;
 
