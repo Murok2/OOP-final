@@ -38,9 +38,9 @@
                 <TextField fx:id="txtLastName" layoutX="8.0" layoutY="61.0" prefHeight="34.0" prefWidth="275.0"
                            promptText="Last Name"/>
                 <PasswordField fx:id="txtPassword" layoutX="8.0" layoutY="295.0" prefHeight="34.0" prefWidth="275.0"
-                               promptText="Password" stylesheets="@../styling/fullpackstyling.css"/>
+                               promptText="Password" stylesheets="@../css/fullpackstyling.css"/>
                 <Button fx:id="btnSignUp" layoutX="8.0" layoutY="339.0" mnemonicParsing="false" prefHeight="34.0"
-                        prefWidth="275.0" stylesheets="@../styling/fullpackstyling.css" text="Sign up"/>
+                        prefWidth="275.0" stylesheets="@../css/fullpackstyling.css" text="Sign up"/>
                 <Label fx:id="lblErrors" alignment="CENTER" layoutX="8.0" layoutY="95.0" prefHeight="23.0"
                        prefWidth="275.0" textFill="#ff6354">
                     <font>
