@@ -124,7 +124,6 @@ public class DatabaseHandler extends Configurations{
 
     }
 
-
     public ObservableList<User> getAlluserInfo() throws SQLException, ClassNotFoundException {
 
         ObservableList<User> userInfoList=FXCollections.observableArrayList();
@@ -136,7 +135,6 @@ public class DatabaseHandler extends Configurations{
         ResultSet rs=statement.executeQuery(query);
 
         while(rs.next()){
-//            int id=rs.getInt("idUserAccounts");
             String firstName=rs.getString("firstName");
             String lastName=rs.getString("lastName");
             String email=rs.getString("username");
@@ -156,9 +154,9 @@ public class DatabaseHandler extends Configurations{
         Connection conn=getDbConnection();
         Statement statement=conn.createStatement();
 
-        String query= "UPDATE bookinfo "
-                + "SET Title ='"+bookinfo.getTitle()+"',Author='"+bookinfo.getAuthor()+"',Publisher='"+bookinfo.getPublisher()+"',numberOfCopies="+bookinfo.getNumcopies()
-                + "WHERE ISBN = '"+bookinfo.getIsbn()+"'";
+        String query = "UPDATE bookinfo "
+                + "SET Title ='"+bookinfo.getTitle()+"',Author='"+bookinfo.getAuthor()+"',Publisher='"+bookinfo.getPublisher()+"',numberOfCopies='"+bookinfo.getNumcopies()
+                + "' WHERE ISBN = '"+bookinfo.getIsbn()+"'";
         if(statement.executeUpdate(query)>0){
             return "bookinfo updated successfully";
         }else{

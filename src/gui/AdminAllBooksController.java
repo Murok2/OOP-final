@@ -1,20 +1,30 @@
 package gui;
 
-import DataAccess.DatabaseHandler;
-import classes.BookInfo;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
-import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
-import javafx.scene.control.*;
-import javafx.scene.control.cell.PropertyValueFactory;
-import javafx.scene.input.MouseEvent;
-
 import java.net.URL;
 import java.sql.SQLException;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
+import DataAccess.DatabaseHandler;
+import classes.BookInfo;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.Alert;
+import javafx.scene.control.SelectionMode;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
+import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.input.MouseEvent;
+import classes.BookInfo;
+import javafx.stage.Stage;
 
 public class AdminAllBooksController implements Initializable {
 
@@ -103,6 +113,18 @@ public class AdminAllBooksController implements Initializable {
         alert.setContentText("Book info Updated Successfully");
         alert.showAndWait();
 
+        try{
+            Parent tableViewParent = FXMLLoader.load(getClass().getResource("/gui/MainAdmin.fxml"));
+            Scene tableViewScene = new Scene(tableViewParent);
+
+            Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+
+            window.setScene(tableViewScene);
+            window.show();
+        }
+        catch (Exception ex){
+            ex.printStackTrace();
+        }
 
     }
 
@@ -114,6 +136,19 @@ public class AdminAllBooksController implements Initializable {
         AdminAddBookController.bookInfoList.removeAll(selectedBooks);
         DatabaseHandler dbAction=new DatabaseHandler();
         dbAction.deletebooks(selectedBooks);
+
+        try{
+            Parent tableViewParent = FXMLLoader.load(getClass().getResource("/gui/MainAdmin.fxml"));
+            Scene tableViewScene = new Scene(tableViewParent);
+
+            Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+
+            window.setScene(tableViewScene);
+            window.show();
+        }
+        catch (Exception ex){
+            ex.printStackTrace();
+        }
     }
 
 

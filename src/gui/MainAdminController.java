@@ -20,7 +20,7 @@ public class MainAdminController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         try {
-            Parent pane=FXMLLoader.load(getClass().getResource("AdminAddBook.fxml"));
+            Parent pane=FXMLLoader.load(getClass().getResource("AdminAllBooks.fxml"));
             maincontent.getChildren().setAll(pane);
 
         } catch (IOException ex) {

@@ -1,9 +1,17 @@
 package gui;
 
+import java.io.IOException;
+import java.net.URL;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ResourceBundle;
+
 import DataAccess.DatabaseHandler;
 import animations.Shake;
 import classes.Admin;
 import classes.User;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -16,12 +24,6 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
-
-import java.io.IOException;
-import java.net.URL;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.ResourceBundle;
 
 public class SignInController {
 
@@ -48,6 +50,9 @@ public class SignInController {
 
     @FXML
     private Label lblErrors;
+
+    @FXML
+    private Button btnExit;
 
     @FXML
     void initialize() {
@@ -78,6 +83,9 @@ public class SignInController {
             }
         });
 
+        btnExit.setOnAction(event -> {
+            System.exit(0);
+        });
     }
 
     private void loginUser(String usernameText, String passwordText) {
@@ -91,7 +99,7 @@ public class SignInController {
         admin.setEmail(usernameText);
         admin.setPassword(passwordText);
 
-        ResultSet userResultSet = dbHandler.getUser(user); //выделить память
+        ResultSet userResultSet = dbHandler.getUser(user);
         ResultSet adminResultSet = dbHandler.getAdmin(admin);
 
         int userCounter = 0;
