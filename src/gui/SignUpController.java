@@ -2,9 +2,16 @@ package gui;
 
 import DataAccess.DatabaseHandler;
 import classes.User;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.stage.Stage;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -32,7 +39,7 @@ public class SignUpController {
     private TextField txtFirstName;
 
     @FXML
-    private TextField txtUsername;
+    private TextField txtEmail;
 
     @FXML
     private TextField txtPhoneNumber;
@@ -47,11 +54,48 @@ public class SignUpController {
     private RadioButton radioBtnFemale;
 
     @FXML
+    private Button btnSignIn;
+
+    @FXML
+    void handleSignUpButtonAction(ActionEvent event) throws Exception {
+    }
+
+    @FXML
     void initialize() {
-        btnSignUp.setOnAction(event -> {
-            signUpNewUser();
+        btnSignUp.setOnAction(event -> signUpNewUser());
+
+        btnSignIn.setOnAction(event -> {
+            try{
+                Parent tableViewParent = FXMLLoader.load(getClass().getResource("/gui/SignIn.fxml"));
+                Scene tableViewScene = new Scene(tableViewParent);
+
+                Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+
+                window.setScene(tableViewScene);
+                window.show();
+            }
+            catch (Exception ex){
+                ex.printStackTrace();
+            }
         });
 
+    }
+
+    private void openNewScene(String newWindow) {
+        btnSignIn.getScene().getWindow().hide();
+
+        FXMLLoader fxmlLoader = new FXMLLoader();
+        fxmlLoader.setLocation(getClass().getResource(newWindow));
+        try {
+            fxmlLoader.load();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        Parent root = fxmlLoader.getRoot();
+        Stage stage = new Stage();
+        stage.setScene(new Scene(root));
+        stage.showAndWait();
     }
 
     private void signUpNewUser() {
@@ -61,19 +105,24 @@ public class SignUpController {
         String lastName = txtLastName.getText();
         String phoneNumber = txtPhoneNumber.getText();
         String address = txtAddress.getText();
-        String username = txtUsername.getText();
+        String email = txtEmail.getText();
         String password = txtPassword.getText();
         String gender = "";
 
-        if (radioBtnMale.isSelected()) {
+        if(radioBtnMale.isSelected())
             gender = "Male";
-        }
-        if (radioBtnFemale.isSelected())
+        if(radioBtnFemale.isSelected())
             gender = "Female";
 
-        User user = new User(firstName, lastName, phoneNumber, address, username, password, gender);
+        User user = new User(firstName, lastName, email, password, gender, phoneNumber, address);
 
         databaseHandler.signUpUser(user);
+
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Information Dialog");
+        alert.setHeaderText(null);
+        alert.setContentText("You have successfully registered!");
+        alert.showAndWait();
 
     }
 }

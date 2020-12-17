@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="477.0" prefWidth="583.0" style="-fx-background-color: #EBF5FB;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.AdminAddBookController">
+    <children>
+        <Label layoutX="56.0" layoutY="55.0" text="Title" textFill="#791e1e">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font></Label>
+        <Label layoutX="54.0" layoutY="122.0" text="ISBN" textFill="#791e1e">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+        <Label layoutX="49.0" layoutY="190.0" text="Author" textFill="#791e1e">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+        <Label layoutX="36.0" layoutY="259.0" text="Publisher" textFill="#791e1e">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+        <TextField fx:id="bookTitle" layoutX="144.0" layoutY="54.0" prefHeight="30.0" prefWidth="359.0" />
+        <TextField fx:id="bookID" layoutX="144.0" layoutY="120.0" prefHeight="30.0" prefWidth="359.0" />
+        <TextField fx:id="bookAuthor" layoutX="144.0" layoutY="188.0" prefHeight="30.0" prefWidth="359.0" />
+        <TextField fx:id="bookPublisher" layoutX="144.0" layoutY="257.0" prefHeight="30.0" prefWidth="359.0" />
+        <Button fx:id="addbookButton" layoutX="215.0" layoutY="401.0" mnemonicParsing="false" onMouseClicked="#addbookbuttonAction" prefHeight="39.0" prefWidth="175.0" style="-fx-background-color: #0B3980;" text="Add Book" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Button>
+        <TextField fx:id="numofCopies" layoutX="182.0" layoutY="323.0" prefHeight="30.0" prefWidth="321.0" />
+        <Label layoutX="11.0" layoutY="316.0" prefHeight="44.0" prefWidth="166.0" text="Number of Copies" textFill="#791e1e">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+    </children>
+</AnchorPane>

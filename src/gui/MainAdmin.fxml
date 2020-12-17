@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="564.0" prefWidth="1101.0" style="-fx-background-color: #0F418E;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.MainAdminController">
+    <children>
+        <VBox layoutX="260.0" prefHeight="89.0" prefWidth="842.0">
+            <children>
+                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="51.0" prefWidth="423.0" text="Admin Main Panel" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="35.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets left="188.0" top="18.0" />
+                    </VBox.margin>
+                </Label>
+            </children>
+        </VBox>
+        <VBox layoutX="-4.0" prefHeight="576.0" prefWidth="293.0" style="-fx-background-color: #EBF5FB;">
+            <children>
+                <Pane prefHeight="126.0" prefWidth="276.0">
+                    <children>
+                        <ImageView fitHeight="59.0" fitWidth="49.0" layoutX="14.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/library_management.png" />
+                            </image>
+                        </ImageView>
+                        <Label layoutX="74.0" layoutY="50.0" prefHeight="27.0" prefWidth="213.0" text="IAAU Electronic Library" textFill="#18067c">
+                            <font>
+                                <Font name="System Bold" size="18.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </Pane>
+                <Button graphicTextGap="15.0" mnemonicParsing="false" onMouseClicked="#addbooks" prefHeight="53.0" prefWidth="205.0" stylesheets="@../css/fullpackstyling.css" text="Adding Books" textFill="WHITE">
+                    <VBox.margin>
+                        <Insets left="45.0" top="41.0" />
+                    </VBox.margin>
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Button>
+                <Button graphicTextGap="15.0" mnemonicParsing="false" onMouseClicked="#showAllbooks" prefHeight="54.0" prefWidth="205.0" stylesheets="@../css/fullpackstyling.css" text="List of all Books" textFill="WHITE">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets left="45.0" top="41.0" />
+                    </VBox.margin>
+                </Button>
+            </children>
+        </VBox>
+        <VBox fx:id="maincontent" layoutX="307.0" layoutY="89.0" prefHeight="474.0" prefWidth="781.0" style="-fx-background-color: #EBF5FB;" />
+    </children>
+</AnchorPane>
