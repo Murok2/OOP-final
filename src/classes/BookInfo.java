@@ -2,25 +2,29 @@ package classes;
 
 public class BookInfo {
 
-    private String title;
-    private String isbn;
-    private String author;
-    private String publisher;
-    public int numcopies;
+    protected String title;
+    protected String isbn;
+    protected String author;
+    protected String publisher;
+    private String categories;
+    private String subcategories;
+    private int year;
+    private int rating;
+    private int numcopies;
 
-    public BookInfo() {
-    }
-
-    public BookInfo(String author) {
-        this.author = author;
-    }
-
-    public BookInfo(String title, String isbn, String author, String publisher, int numcopies) {
+    public BookInfo(String title, String isbn, String author, String publisher, String categories, String subcategories, int year, int rating, int numcopies) {
         this.title = title;
         this.isbn = isbn;
         this.author = author;
         this.publisher = publisher;
+        this.categories = categories;
+        this.subcategories = subcategories;
+        this.year = year;
+        this.rating = rating;
         this.numcopies = numcopies;
+    }
+
+    public BookInfo(String title, String isbn, String author, String publisher) {
     }
 
     public String getTitle() {
@@ -54,6 +58,39 @@ public class BookInfo {
     public void setPublisher(String publisher) {
         this.publisher = publisher;
     }
+
+    public String getCategories() {
+        return categories;
+    }
+
+    public void setCategories(String categories) {
+        this.categories = categories;
+    }
+
+    public String getSubcategories() {
+        return subcategories;
+    }
+
+    public void setSubcategories(String subcategories) {
+        this.subcategories = subcategories;
+    }
+
+    public int getYear() {
+        return year;
+    }
+
+    public void setYear(int year) {
+        this.year = year;
+    }
+
+    public int getRating() {
+        return rating;
+    }
+
+    public void setRating(int rating) {
+        this.rating = rating;
+    }
+
     public int getNumcopies() {
         return numcopies;
     }
@@ -64,7 +101,16 @@ public class BookInfo {
 
     @Override
     public String toString() {
-        return "bookInfo{" + "title=" + title + ", isbn=" + isbn+ ", author=" + author + ", publisher="+publisher+", numcopies="+numcopies+'}';
+        return "BookInfo{" +
+                "title='" + title + '\'' +
+                ", isbn='" + isbn + '\'' +
+                ", author='" + author + '\'' +
+                ", publisher='" + publisher + '\'' +
+                ", categories='" + categories + '\'' +
+                ", subcategories='" + subcategories + '\'' +
+                ", year=" + year +
+                ", rating=" + rating +
+                ", numcopies=" + numcopies +
+                '}';
     }
-
 }

@@ -19,8 +19,7 @@ public class User {
         this.address = address;
     }
 
-    public User() {
-    }
+    public User() {}
 
     public String getFirstName() {
         return firstName;

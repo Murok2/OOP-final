@@ -5,11 +5,11 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="512.0" prefWidth="790.0" style="-fx-background-color: #EBF5FB;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.AdminAllBooksController">
+<AnchorPane id="AnchorPane" prefHeight="509.0" prefWidth="1048.0" style="-fx-background-color: #EBF5FB;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.AdminAllBooksController">
     <children>
-        <VBox layoutX="1.0" prefHeight="68.0" prefWidth="694.0">
+        <VBox layoutX="1.0" prefHeight="68.0" prefWidth="968.0">
             <children>
-                <Label alignment="CENTER" prefHeight="40.0" prefWidth="510.0" text="All books Information" textFill="#060165">
+                <Label alignment="CENTER" prefHeight="40.0" prefWidth="759.0" text="All books Information" textFill="#060165">
                     <font>
                         <Font name="System Bold" size="28.0" />
                     </font>
@@ -19,29 +19,40 @@
                 </Label>
             </children>
         </VBox>
-        <TableView fx:id="bookInfoTable" layoutX="-1.0" layoutY="85.0" prefHeight="271.0" prefWidth="790.0" style="-fx-background-color: #C3DAFE;">
+        <TableView fx:id="bookInfoTable" layoutX="-1.0" layoutY="85.0" prefHeight="271.0" prefWidth="1036.0" style="-fx-background-color: #C3DAFE;">
             <columns>
-                <TableColumn fx:id="titleColumn" prefWidth="191.0" text="Title" />
-                <TableColumn fx:id="isbnColumn" minWidth="1.0" prefWidth="142.0" text="ISBN" />
-                <TableColumn fx:id="authorColumn" prefWidth="172.0" text="Author" />
-                <TableColumn fx:id="publisherColumn" prefWidth="150.0" text="Publisher" />
-                <TableColumn fx:id="numcopies" prefWidth="150.0" text="No of Copies" />
+                <TableColumn fx:id="titleColumn" prefWidth="137.0" text="Title" />
+                <TableColumn fx:id="isbnColumn" minWidth="1.0" prefWidth="105.0" text="ISBN" />
+                <TableColumn fx:id="authorColumn" prefWidth="131.0" text="Author" />
+                <TableColumn fx:id="publisherColumn" prefWidth="160.0" text="Publisher" />
+                <TableColumn fx:id="categoriesColumn" prefWidth="131.0" text="Categories" />
+                <TableColumn fx:id="subcategoriesColumn" prefWidth="110.0" text="SubCategories" />
+                <TableColumn fx:id="yearColumn" minWidth="0.0" prefWidth="73.0" text="Year" />
+                <TableColumn fx:id="ratingColumn" minWidth="0.0" prefWidth="68.0" text="Rating" />
+                <TableColumn fx:id="numcopies" prefWidth="136.0" text="Number of Books" />
             </columns>
         </TableView>
-        <Button layoutX="233.0" layoutY="431.0" mnemonicParsing="false" onMouseClicked="#updateButtonAction" prefHeight="46.0" prefWidth="154.0" style="-fx-background-color: #0B3980;" text="Update" textFill="WHITE">
+
+        <Button layoutX="355.0" layoutY="431.0" mnemonicParsing="false" onMouseClicked="#updateButtonAction" prefHeight="46.0" prefWidth="154.0" style="-fx-background-color: #0B3980;" text="Update" textFill="WHITE">
             <font>
                 <Font name="System Bold" size="21.0" />
             </font>
         </Button>
-        <Button layoutX="438.0" layoutY="431.0" mnemonicParsing="false" onMouseClicked="#deleteButtonAction" prefHeight="46.0" prefWidth="161.0" style="-fx-background-color: #0B3980;" text="Delete" textFill="WHITE">
+
+        <Button layoutX="556.0" layoutY="431.0" mnemonicParsing="false" onMouseClicked="#deleteButtonAction" prefHeight="46.0" prefWidth="161.0" style="-fx-background-color: #0B3980;" text="Delete" textFill="WHITE">
             <font>
                 <Font name="System Bold" size="21.0" />
             </font>
         </Button>
-        <TextField fx:id="titleEditField" layoutX="5.0" layoutY="364.0" prefHeight="40.0" prefWidth="190.0" />
-        <TextField fx:id="ISBNEditField" layoutX="199.0" layoutY="364.0" prefHeight="40.0" prefWidth="123.0" />
-        <TextField fx:id="AuthorEditField" layoutX="324.0" layoutY="364.0" prefHeight="40.0" prefWidth="178.0" />
-        <TextField fx:id="PublisherEditField" layoutX="505.0" layoutY="364.0" prefHeight="40.0" prefWidth="129.0" />
-        <TextField fx:id="numofCopies" layoutX="636.0" layoutY="364.0" prefHeight="40.0" prefWidth="154.0" />
+
+        <TextField fx:id="titleEditField" layoutX="5.0" layoutY="364.0" prefHeight="40.0" prefWidth="129.0" />
+        <TextField fx:id="ISBNEditField" layoutX="141.0" layoutY="364.0" prefHeight="40.0" prefWidth="102.0" />
+        <TextField fx:id="AuthorEditField" layoutX="253.0" layoutY="364.0" prefHeight="40.0" prefWidth="121.0" />
+        <TextField fx:id="PublisherEditField" layoutX="383.0" layoutY="364.0" prefHeight="40.0" prefWidth="152.0" />
+        <TextField fx:id="CategoriesEditField" layoutX="544.0" layoutY="364.0" prefHeight="40.0" prefWidth="121.0" />
+        <TextField fx:id="SubCategoriesEditField" layoutX="672.0" layoutY="364.0" prefHeight="40.0" prefWidth="102.0" />
+        <TextField fx:id="YearEditField" layoutX="782.0" layoutY="364.0" prefHeight="40.0" prefWidth="62.0" />
+        <TextField fx:id="RatingEditField" layoutX="853.0" layoutY="364.0" prefHeight="40.0" prefWidth="62.0" />
+        <TextField fx:id="numofCopies" layoutX="924.0" layoutY="364.0" prefHeight="40.0" prefWidth="102.0" />
     </children>
 </AnchorPane>

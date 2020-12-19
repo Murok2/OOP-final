@@ -1,20 +1,12 @@
 package classes;
 
-public class IssuedBook {
-    private String title;
-    private String isbn;
-    private String author;
-    private String publisher;
-    private String datepicker;
-
-    public  IssuedBook(){}
-
-    public IssuedBook(String title, String isbn, String author, String publisher, String datepicker) {
+public class IssuedBook extends BookInfo{
+    public IssuedBook(String title, String isbn, String author, String publisher) {
+        super(title, isbn, author, publisher);
         this.title = title;
         this.isbn = isbn;
         this.author = author;
         this.publisher = publisher;
-        this.datepicker = datepicker;
     }
 
     public String getTitle() {
@@ -49,14 +41,6 @@ public class IssuedBook {
         this.publisher = publisher;
     }
 
-    public String getDatepicker() {
-        return datepicker;
-    }
-
-    public void setDatepicker(String datepicker) {
-        this.datepicker = datepicker;
-    }
-
     @Override
     public String toString() {
         return "IssuedBook{" +
@@ -64,7 +48,7 @@ public class IssuedBook {
                 ", isbn='" + isbn + '\'' +
                 ", author='" + author + '\'' +
                 ", publisher='" + publisher + '\'' +
-                ", datepicker='" + datepicker + '\'' +
+//                ", datepicker='" + datepicker + '\'' +
                 '}';
     }
 }

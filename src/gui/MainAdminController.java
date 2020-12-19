@@ -8,14 +8,21 @@ import java.util.logging.Logger;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
 import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
 
 public class MainAdminController implements Initializable {
 
     @FXML
     private VBox maincontent;
+
+    @FXML
+    private ImageView btnClose;
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -40,4 +47,25 @@ public class MainAdminController implements Initializable {
         maincontent.getChildren().setAll(pane);
     }
 
+    @FXML
+    void handleClose(MouseEvent event) {
+        if (event.getSource() == btnClose) {
+            try{
+                Parent tableViewParent = FXMLLoader.load(getClass().getResource("/gui/SignIn.fxml"));
+                Scene tableViewScene = new Scene(tableViewParent);
+
+                Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+
+                window.setScene(tableViewScene);
+                window.show();
+            }
+            catch (Exception ex){
+                ex.printStackTrace();
+            }
+        }
+    }
+
+
 }
+
+

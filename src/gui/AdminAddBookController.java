@@ -32,6 +32,14 @@ public class AdminAddBookController implements Initializable {
     private Button addbookButton;
     @FXML
     private TextField numofCopies;
+    @FXML
+    private TextField bookCategory;
+    @FXML
+    private TextField bookSubCategory;
+    @FXML
+    private TextField bookYear;
+    @FXML
+    private TextField bookRating;
 
     static ObservableList<BookInfo> bookInfoList=FXCollections.observableArrayList();
 
@@ -56,14 +64,15 @@ public class AdminAddBookController implements Initializable {
             String isbn=bookID.getText();
             String author=bookAuthor.getText();
             String publisher=bookPublisher.getText();
+            String category=bookCategory.getText();
+            String subcategory=bookSubCategory.getText();
+            int year= Integer.parseInt(bookYear.getText());
+            int rating= Integer.parseInt(bookRating.getText());
             int numofcopies=Integer.parseInt(numofCopies.getText());
 
 
-            BookInfo bookobj=new BookInfo(title,isbn,author,publisher,numofcopies);
+            BookInfo bookobj=new BookInfo(title,isbn,author,publisher,category,subcategory,year,rating,numofcopies);
 
-
-
-            //database action
             DatabaseHandler dbAction=new DatabaseHandler();
             dbAction.addbookInfo(bookobj);
 
@@ -78,10 +87,6 @@ public class AdminAddBookController implements Initializable {
             bookAuthor.clear();
             bookPublisher.clear();
             numofCopies.clear();
-
-
         }
-
     }
-
 }

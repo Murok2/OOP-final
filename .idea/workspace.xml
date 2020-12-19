@@ -2,28 +2,59 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Test Cases">
-      <change afterPath="E:/Web design/Hotel/.idea/Hotel.iml" afterDir="false" />
-      <change afterPath="E:/Web design/start_html-master/.idea/start_html-master.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gui/ReturnBook.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gui/ReturnBookController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gui/ToIssueBook.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gui/ToIssueBookController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gui/UserAllIssuedBooks.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gui/UserAllIssuedBooksController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IAAU Lib.iml" beforeDir="false" afterPath="$PROJECT_DIR$/IAAU Lib.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/IAAU Lib/DataAccess/DatabaseHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IAAU Lib/DataAccess/DatabaseHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IAAU Lib/DataAccess/UserConstants.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IAAU Lib/DataAccess/UserConstants.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IAAU Lib/Tests/BookInfoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IAAU Lib/Tests/BookInfoTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IAAU Lib/Tests/IssuedBookTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IAAU Lib/Tests/IssuedBookTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IAAU Lib/classes/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IAAU Lib/classes/Admin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IAAU Lib/classes/BookInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IAAU Lib/classes/BookInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IAAU Lib/classes/IssuedBook.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IAAU Lib/classes/IssuedBook.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IAAU Lib/classes/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IAAU Lib/classes/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IAAU Lib/gui/AdminAddBook.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IAAU Lib/gui/AdminAddBook.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IAAU Lib/gui/AdminAddBookController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IAAU Lib/gui/AdminAddBookController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IAAU Lib/gui/AdminAllBooks.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IAAU Lib/gui/AdminAllBooks.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/IAAU Lib/gui/AdminAllBooksController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IAAU Lib/gui/AdminAllBooksController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IAAU Lib/gui/FXMLController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IAAU Lib/gui/FXMLController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IAAU Lib/gui/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IAAU Lib/gui/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IAAU Lib/gui/MainAdmin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IAAU Lib/gui/MainAdmin.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/IAAU Lib/gui/MainAdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IAAU Lib/gui/MainAdminController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/IAAU Lib/gui/MainPanel.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IAAU Lib/gui/MainPanel.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/IAAU Lib/gui/MainPanelController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IAAU Lib/gui/MainPanelController$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/IAAU Lib/gui/MainPanelController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IAAU Lib/gui/MainPanelController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/IAAU Lib/gui/SignIn.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IAAU Lib/gui/SignIn.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/IAAU Lib/gui/SignInController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IAAU Lib/gui/SignInController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IAAU Lib/gui/SignUp.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IAAU Lib/gui/SignUp.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IAAU Lib/gui/SignUpController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IAAU Lib/gui/SignUpController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DataAccess/DatabaseHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataAccess/DatabaseHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataAccess/UserConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataAccess/UserConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tests/BookInfoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tests/BookInfoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tests/IssuedBookTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tests/IssuedBookTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/BookInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/BookInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/IssuedBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/IssuedBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/AdminAddBook.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/AdminAddBook.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/AdminAddBookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/AdminAddBookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/AdminAllBooks.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/AdminAllBooks.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gui/AdminAllBooksController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/AdminAllBooksController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/FXMLController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/FXMLController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/MainAdmin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/MainAdmin.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gui/MainAdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/MainAdminController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gui/MainPanel.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/MainPanel.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gui/MainPanelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/MainPanelController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gui/SignIn.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/SignIn.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gui/SignInController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/SignInController.java" afterDir="false" />
-      <change beforePath="E:/Makers Bootstrap/Casablanca-PSD/.idea/Casablanca-PSD.iml" beforeDir="false" />
-      <change beforePath="E:/Makers Bootstrap/Casablanca-PSD/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="E:/Makers Bootstrap/Casablanca-PSD/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="E:/Makers Bootstrap/Casablanca-PSD/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/SignUp.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/SignUp.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/SignUpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/SignUpController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -277,9 +308,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JUnit4 Test Class" />
         <option value="FxmlFile" />
         <option value="Class" />
-        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -289,7 +320,7 @@
     </FindUsagesManager>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="E:/" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -337,6 +368,7 @@
     <option name="width" value="1386" />
     <option name="height" value="788" />
   </component>
+  <component name="ProjectId" id="1lqGfZxusBMNOn0CJGuLYz0o0kB" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -419,6 +451,10 @@
       <pane id="PackagesPane" />
     </panes>
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="Downloaded.Files.Path.Enabled" value="false" />
@@ -432,6 +468,8 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1576657890165" />
@@ -440,7 +478,8 @@
     <property name="create.test.in.the.same.root" value="true" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../library_project/IAAULib" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
@@ -657,6 +696,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -673,6 +713,8 @@
       <workItem from="1575866669949" duration="1118000" />
       <workItem from="1575896864348" duration="7287000" />
       <workItem from="1575965540257" duration="15717000" />
+      <workItem from="1608317327559" duration="3454000" />
+      <workItem from="1608368481755" duration="10912000" />
     </task>
     <task id="LOCAL-00001" summary="Test cases">
       <created>1608237020428</created>
@@ -818,7 +860,7 @@
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

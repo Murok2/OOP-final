@@ -73,6 +73,7 @@ public class SignInController {
                 Parent tableViewParent = FXMLLoader.load(getClass().getResource("/gui/SignUp.fxml"));
                 Scene tableViewScene = new Scene(tableViewParent);
 
+                //This line gets the Stage information
                 Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
 
                 window.setScene(tableViewScene);
@@ -99,7 +100,7 @@ public class SignInController {
         admin.setEmail(usernameText);
         admin.setPassword(passwordText);
 
-        ResultSet userResultSet = dbHandler.getUser(user);
+        ResultSet userResultSet = dbHandler.getUser(user); //выделить память
         ResultSet adminResultSet = dbHandler.getAdmin(admin);
 
         int userCounter = 0;

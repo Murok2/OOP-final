@@ -6,7 +6,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class IssuedBookTest {
-    IssuedBook issuedBook = new IssuedBook("Java : How to Program", "02-3456-7890", "Paul Deitel", "Java", "02-04-2019");
+    IssuedBook issuedBook = new IssuedBook("Java : How to Program", "02-3456-7890", "Paul Deitel", "Java");
 
     @Test
     public void getTitleTest() {
@@ -53,18 +53,7 @@ public class IssuedBookTest {
     }
 
     @Test
-    public void getDatepickerTest() {
-        assertEquals("02-04-2019", issuedBook.getDatepicker());
-    }
-
-    @Test
-    public void setDatepickerTest() {
-        issuedBook.setDatepicker("02-04-2019");
-        assertEquals("02-04-2019", issuedBook.getDatepicker());
-    }
-
-    @Test
     public void toStringTest() {
-        assertEquals("IssuedBook{title='Java : How to Program', isbn='02-3456-7890', author='Paul Deitel', publisher='Java', datepicker='02-04-2019'}", issuedBook.toString());
+        assertEquals("IssuedBook{title='Java : How to Program', isbn='02-3456-7890', author='Paul Deitel', publisher='Java'}", issuedBook.toString());
     }
 }

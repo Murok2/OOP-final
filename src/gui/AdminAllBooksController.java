@@ -37,6 +37,14 @@ public class AdminAllBooksController implements Initializable {
     @FXML
     private TableColumn<BookInfo, String> publisherColumn;
     @FXML
+    private TableColumn<BookInfo, String> categoriesColumn;
+    @FXML
+    private TableColumn<BookInfo, String> subcategoriesColumn;
+    @FXML
+    private TableColumn<BookInfo, Integer> yearColumn;
+    @FXML
+    private TableColumn<BookInfo, Integer> ratingColumn;
+    @FXML
     private TableColumn<BookInfo, Integer> numcopies;
     @FXML
     private TableView<BookInfo> bookInfoTable;
@@ -46,6 +54,16 @@ public class AdminAllBooksController implements Initializable {
     private TextField AuthorEditField;
     @FXML
     private TextField PublisherEditField;
+    @FXML
+    private TextField CategoriesEditField;
+    @FXML
+    private TextField SubCategoriesEditField;
+    @FXML
+    private TextField YearEditField;
+    @FXML
+    private TextField RatingEditField;
+
+
 
     static ObservableList<BookInfo> bookInfoList=FXCollections.observableArrayList();
 
@@ -70,6 +88,10 @@ public class AdminAllBooksController implements Initializable {
         isbnColumn.setCellValueFactory(new PropertyValueFactory<BookInfo,String>("Isbn"));
         authorColumn.setCellValueFactory(new PropertyValueFactory<BookInfo,String>("author"));
         publisherColumn.setCellValueFactory(new PropertyValueFactory<BookInfo,String>("publisher"));
+        categoriesColumn.setCellValueFactory(new PropertyValueFactory<BookInfo, String>("categories"));
+        subcategoriesColumn.setCellValueFactory(new PropertyValueFactory<BookInfo, String>("subcategories"));
+        yearColumn.setCellValueFactory(new PropertyValueFactory<BookInfo,Integer>("year"));
+        ratingColumn.setCellValueFactory(new PropertyValueFactory<BookInfo,Integer>("rating"));
         numcopies.setCellValueFactory(new PropertyValueFactory<BookInfo,Integer>("numcopies"));
 
         bookInfoTable.setItems(bookInfoList);
@@ -91,17 +113,16 @@ public class AdminAllBooksController implements Initializable {
         String bookisbn=ISBNEditField.getText();
         String newAuthor = AuthorEditField.getText();
         String newPublisher = PublisherEditField.getText();
+        String newCategories = CategoriesEditField.getText();
+        String newSubCategories = SubCategoriesEditField.getText();
+        int newYear = Integer.parseInt(YearEditField.getText());
+        int newRating = Integer.parseInt(RatingEditField.getText());
         int numofcopies=Integer.parseInt(numofCopies.getText());
 
-        BookInfo bookinfoobj=new BookInfo(newTitle, bookisbn, newAuthor, newPublisher,numofcopies);
-
-
+        BookInfo bookinfoobj=new BookInfo(newTitle, bookisbn, newAuthor, newPublisher,newCategories, newSubCategories, newYear, newRating, numofcopies);
 
         DatabaseHandler dbAction=new DatabaseHandler();
         dbAction.updatebookInfo(bookinfoobj);
-
-
-
 
         titleEditField.clear();
         ISBNEditField.clear();

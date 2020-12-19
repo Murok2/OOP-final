@@ -1,5 +1,9 @@
 package gui;
 
+import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
+
 import DataAccess.DatabaseHandler;
 import classes.User;
 import javafx.event.ActionEvent;
@@ -10,10 +14,6 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.stage.Stage;
-
-import java.io.IOException;
-import java.net.URL;
-import java.util.ResourceBundle;
 
 public class SignUpController {
 
@@ -62,13 +62,14 @@ public class SignUpController {
 
     @FXML
     void initialize() {
-        btnSignUp.setOnAction(event -> signUpNewUser());
+        btnSignUp.setOnAction(event -> {
+            signUpNewUser();
+        });
 
         btnSignIn.setOnAction(event -> {
             try{
                 Parent tableViewParent = FXMLLoader.load(getClass().getResource("/gui/SignIn.fxml"));
                 Scene tableViewScene = new Scene(tableViewParent);
-
                 Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
 
                 window.setScene(tableViewScene);
