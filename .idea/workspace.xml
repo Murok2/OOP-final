@@ -19,7 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Upl upl" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -363,6 +363,7 @@
       <workItem from="1608368481755" duration="11757000" />
       <workItem from="1608393464133" duration="987000" />
       <workItem from="1608394473480" duration="278000" />
+      <workItem from="1608394772178" duration="184000" />
     </task>
     <task id="LOCAL-00001" summary="Test cases">
       <created>1608237020428</created>
@@ -413,7 +414,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608394493073</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Upl upl">
+      <created>1608394785476</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1608394785476</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -473,6 +481,12 @@
     <MESSAGE value="Upload upload" />
     <MESSAGE value="Upl upl" />
     <option name="LAST_COMMIT_MESSAGE" value="Upl upl" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1608394790736">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1608394790736" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
