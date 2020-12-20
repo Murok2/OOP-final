@@ -43,3 +43,7 @@ database management system for storing, inserting, deleting, updating data.
 ![Снимок экрана (337)](https://user-images.githubusercontent.com/49513497/102699872-8df0b700-4272-11eb-89ce-2a9e874c8bd3.png)
 ![Снимок экрана (343)](https://user-images.githubusercontent.com/49513497/102699873-8e894d80-4272-11eb-97ab-e6368236fe14.png)
 
+
+# This is the link into google docs
+https://docs.google.com/document/d/1HXVRHh_JZPIGfwxfh7SKDh_o_x-JNpFsr5qyDTA-dUw/edit?usp=sharing
+ There we have some little tutorials of our project and explanations
