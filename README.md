@@ -45,5 +45,5 @@ database management system for storing, inserting, deleting, updating data.
 
 
 # This is the link into google docs
-https://docs.google.com/document/d/1HXVRHh_JZPIGfwxfh7SKDh_o_x-JNpFsr5qyDTA-dUw/edit?usp=sharing
+- https://docs.google.com/document/d/1HXVRHh_JZPIGfwxfh7SKDh_o_x-JNpFsr5qyDTA-dUw/edit?usp=sharing
  There we have some little tutorials of our project and explanations
