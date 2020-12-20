@@ -49,9 +49,9 @@ database management system for storing, inserting, deleting, updating data.
  There we have some little tutorials of our project and some explanations
  
 # Here is the link for our video presentation
-https://youtu.be/3fGJwU9bWXk 
-(In order to watch the video you need to sign in into youtube? because if the age limit and access only by the link)
+- https://youtu.be/3fGJwU9bWXk 
+(In order to watch the video you need to sign in into youtube, because if the age limit and and get access only by clicking on the link)
 
 # Link to our power point presentation
-https://www.canva.com/design/DAEQwXrLnMo/oVawilsVzQpuk5cF8anlGA/view#24
+- https://www.canva.com/design/DAEQwXrLnMo/oVawilsVzQpuk5cF8anlGA/view#24
 
