@@ -55,3 +55,5 @@ database management system for storing, inserting, deleting, updating data.
 # Link to our power point presentation
 - https://www.canva.com/design/DAEQwXrLnMo/oVawilsVzQpuk5cF8anlGA/view#24
 
+# Some feedbacks
+https://docs.google.com/document/d/10vDJKj5gsuj8NFyt6l5so_dLrXFNvwp3Y4UBqHdjv_8/edit?usp=sharing
